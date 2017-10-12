@@ -29,9 +29,11 @@
   },
   "lint-staged": {
     "gitDir": "../",
-    "{*.js}": [
+    "linters": {
+    "*.js": [
       "prettier --write",
       "git add"
-    ]
+      ]
+    }
   }
 }
