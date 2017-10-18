@@ -1,23 +1,19 @@
 <template>
     <div id="app">
-        <img src="./assets/logo.png">
-        <h1>Welcome to GoLang kingdom</h1>
-
-        <dropzone id="myVueDropzone" url="https://httpbin.org/post" v-on:vdropzone-success="showSuccess">
-            <!-- Optional parameters if any! -->
-            <input type="hidden" name="token" value="xxx">
-        </dropzone>
-
+        <headzone></headzone>
+        <drop></drop>
     </div>
 </template>
 
 <script>
-    import Dropzone from 'vue2-dropzone'
+    import Drop from './components/Drop.vue'
+    import Headzone from './components/Header.vue'
 
     export default {
         name: 'app',
         components: {
-            Dropzone
+            Drop,
+            Headzone
         },
         methods: {
             'showSuccess': function (file) {
@@ -29,29 +25,11 @@
 
 <style>
     #app {
-        font-family: 'Avenir', Helvetica, Arial, sans-serif;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
         text-align: center;
         color: #2c3e50;
-        margin-top: 60px;
+        height: 100vh;
     }
-
-    h1, h2 {
-        font-weight: normal;
-    }
-
-    ul {
-        list-style-type: none;
-        padding: 0;
-    }
-
-    li {
-        display: inline-block;
-        margin: 0 10px;
-    }
-
-    a {
-        color: #42b983;
+    body {
+        margin: 0%;
     }
 </style>
