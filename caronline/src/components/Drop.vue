@@ -24,8 +24,12 @@
 <style>
     #drop {
         position: relative;
-        height: 85%;
         margin: 0;
         background-color: #e6e6e6;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
     }
 </style>

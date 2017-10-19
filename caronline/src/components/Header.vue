@@ -1,7 +1,14 @@
 <template>
     <div id="header">
-        <p>CAROnLINE</p>
-        <img src="../assets/logo.png">
+        <div class="logo">
+            <p>CAROnLINE</p>
+            <img src="../assets/logo.png">
+        </div>
+
+        <div class="button">
+            Кнопка
+        </div>
+
     </div>
 </template>
 
@@ -14,23 +21,49 @@
 <style>
     #header {
         width: 100%;
-        height: 15%;
         background-color: #540c06;
         position: relative;
+        text-align: left;
+        padding: 20px;
+    }
+
+    .logo {
+        float: left;
+    }
+
+    .logo:hover {
+        opacity: .8;
     }
 
     img {
-        display: block;
-        margin-right: auto;
+        display: inline-block;
+        vertical-align: middle;
         width: 80px;
     }
 
     p {
-        position: relative;
+        display: inline-block;
+        vertical-align: middle;
         color: #e6e6e6;
         font-size: x-large;
-        float: left;
         font-family: 'Kaushan Script', cursive;
     }
 
+    .button {
+        height: 50px;
+        line-height: 50px;
+        width: auto;
+        padding: 0 25px;
+        background: #fff;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        float: right;
+        margin-top: 15px;
+    }
+
+    .button:hover {
+        cursor: pointer;
+        opacity: .8;
+    }
 </style>
