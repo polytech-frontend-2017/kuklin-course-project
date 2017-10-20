@@ -10,6 +10,9 @@
     "precommit": "lint-staged"
   },
   "dependencies": {
+    "autoprefixer": "^7.1.5",
+    "postcss-cli": "^4.1.1",
+    "reset-css": "^2.2.1",
     "vue": "^2.4.4",
     "vue2-dropzone": "^2.3.6"
   },
@@ -31,7 +34,7 @@
   "lint-staged": {
     "gitDir": "../",
     "linters": {
-      "*.js": [
+      "*.js, *.html": [
         "prettier --write",
         "git add"
       ]

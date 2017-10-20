@@ -2,12 +2,12 @@
     <div id="header">
         <div class="logo">
             <p>CAROnLINE</p>
-            <img src="../assets/logo.png">
+            <img src="../assets/logo.png" alt="caronline">
         </div>
 
-        <div class="button">
-            Кнопка
-        </div>
+        <button>
+            History
+        </button>
 
     </div>
 </template>
@@ -49,21 +49,22 @@
         font-family: 'Kaushan Script', cursive;
     }
 
-    .button {
+    button {
         height: 50px;
         line-height: 50px;
         width: auto;
         padding: 0 25px;
-        background: #fff;
+        background: #e6e6e6;
         -webkit-border-radius: 3px;
         -moz-border-radius: 3px;
         border-radius: 3px;
         float: right;
         margin-top: 15px;
+        cursor: pointer;
+        font-family: 'Kaushan Script', cursive;
     }
 
-    .button:hover {
-        cursor: pointer;
+    button:hover {
         opacity: .8;
     }
 </style>

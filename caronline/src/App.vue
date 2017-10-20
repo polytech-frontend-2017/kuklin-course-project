@@ -25,20 +25,10 @@
 
 <style>
     * {
-        margin: 0;
-        padding: 0;
-        border:0;
-        max-height: 99999999px;
         -webkit-font-smoothing: antialiased;
-
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
-
-        -webkit-transition: all 0.3s;
-        -moz-transition: all 0.3s;
-        -o-transition: all 0.3s;
-        transition: all 0.3s;
     }
     #app {
         text-align: center;
@@ -54,7 +44,7 @@
         align-content: stretch;
     }
     body {
-        margin: 0%;
+        margin: 0px;
         font-family: sans-serif;
     }
 </style>
