@@ -1,5 +1,5 @@
 <template>
-    <dropzone id="drop" url="https://httpbin.org/post" v-on:vdropzone-success="showSuccess">
+    <dropzone id="drop" url="http://localhost:8081/image/recognize" v-on:vdropzone-success="showSuccess">
         <input type="hidden" name="token" value="xxx">
     </dropzone>
 </template>
@@ -14,8 +14,11 @@
         },
         methods: {
             'showSuccess': function (file) {
+                formData = new FormData()
+                formData.append('file', file)
+
                 console.log('A file was successfully uploaded')
-            }
+            },
         }
     }
 
