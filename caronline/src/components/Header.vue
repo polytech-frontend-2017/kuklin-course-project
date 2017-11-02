@@ -52,6 +52,10 @@
         font-family: 'Kaushan Script', cursive;
     }
 
+    .history:hover {
+        opacity: 1;
+    }
+
     .history img {
         display: inline-block;
         vertical-align: middle;
@@ -59,5 +63,6 @@
         float: right;
         padding-top: 10px;
     }
+
 
 </style>
