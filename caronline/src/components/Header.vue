@@ -61,7 +61,8 @@
         float: right;
         margin-top: 15px;
         cursor: pointer;
-        font-family: 'Kaushan Script', cursive;
+        font-family: "Times New Roman";
+        font-size: 14px;
     }
 
     button:hover {
