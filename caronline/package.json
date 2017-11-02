@@ -34,7 +34,7 @@
   "lint-staged": {
     "gitDir": "../",
     "linters": {
-      "*.js, *.html": [
+      "*.js, *.html, *.vue": [
         "prettier --write",
         "git add"
       ]

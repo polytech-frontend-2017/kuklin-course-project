@@ -1,5 +1,5 @@
 <template>
-    <dropzone id="drop" url="http://localhost:8081/image/recognize" v-on:vdropzone-success="showSuccess">
+    <dropzone id="drop" url="http://localhost:8081/image/recognize" v-on:vdropzone-success="showSuccess" v-on:vdropzone-error="showError">
         <input type="hidden" name="token" value="xxx">
     </dropzone>
 </template>
@@ -14,9 +14,12 @@
         },
         methods: {
             'showSuccess': function (file, response) {
-                console.log(response);
                 let win = window.open(response, '_blank');
                 win.focus();
+            },
+            'showError': function (file, message, xhr) {
+                console.log('Something went wrong during file handling')
+                console.log(message)
             },
         }
     }
