@@ -1,5 +1,6 @@
 <template>
-    <dropzone id="drop" url="http://localhost:8081/image/recognize" v-on:vdropzone-success="showSuccess" v-on:vdropzone-error="showError">
+    <dropzone id="drop" url="http://localhost:8081/image/recognize" v-on:vdropzone-success="showSuccess"
+              v-on:vdropzone-error="showError">
         <input type="hidden" name="token" value="xxx">
     </dropzone>
 </template>
