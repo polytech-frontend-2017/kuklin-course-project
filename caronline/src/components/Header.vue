@@ -53,7 +53,7 @@
     }
 
     .history:hover {
-        opacity: 1;
+        opacity: .8;
     }
 
     .history img {
