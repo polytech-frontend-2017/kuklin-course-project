@@ -30,12 +30,13 @@
         -moz-box-sizing: border-box;
         box-sizing: border-box;
     }
+
     #app {
         text-align: center;
         color: #2c3e50;
         height: 100vh;
-        min-width:320px;
-        min-height:600px;
+        min-width: 320px;
+        min-height: 600px;
 
         display: flex;
         flex-direction: column;
@@ -43,6 +44,7 @@
         align-items: stretch;
         align-content: stretch;
     }
+
     body {
         margin: 0px;
         font-family: sans-serif;
