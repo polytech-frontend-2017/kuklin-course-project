@@ -13,11 +13,10 @@
             Dropzone,
         },
         methods: {
-            'showSuccess': function (file) {
-                formData = new FormData()
-                formData.append('file', file)
-
-                console.log('A file was successfully uploaded')
+            'showSuccess': function (file, response) {
+                console.log(response);
+                let win = window.open(response, '_blank');
+                win.focus();
             },
         }
     }
