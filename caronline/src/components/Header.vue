@@ -5,14 +5,19 @@
             <img src="../assets/logo.png" alt="caronline">
         </div>
         <div class="history">
-            <img src="../assets/history.png" alt="history">
+            <img src="../assets/history.png" alt="history" v-on:click="historyShow">
         </div>
     </div>
 </template>
 
 <script>
     export default {
-        name: 'header'
+        name: 'header',
+        methods: {
+            "historyShow": function (event) {
+                console.log("pressed")
+            }
+        }
     }
 </script>
 
@@ -52,6 +57,7 @@
         vertical-align: middle;
         width: 65px;
         float: right;
+        padding-top: 10px;
     }
-    
+
 </style>
