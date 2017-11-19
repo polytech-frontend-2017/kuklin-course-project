@@ -4,9 +4,9 @@
             <p>CAROnLINE</p>
             <img src="../assets/logo.png" alt="caronline">
         </div>
-        <div class="history">
+        <button class="history">
             <img src="../assets/history.png" alt="history" v-on:click="historyShow">
-        </div>
+        </button>
     </div>
 </template>
 
@@ -52,7 +52,21 @@
         font-family: 'Kaushan Script', cursive;
     }
 
+    .history {
+        display: inline-block;
+        vertical-align: middle;
+        width: 65px;
+        float: right;
+        padding-top: 10px;
+        background-color: transparent;
+        border: none;
+    }
+
     .history:hover {
+        opacity: .8;
+    }
+
+     .history:focus {
         opacity: .8;
     }
 
