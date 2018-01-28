@@ -1,0 +1,220 @@
+@charset "utf-8";
+/* CSS Document */
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+@import url(http://meyerweb.com/eric/tools/css/reset/reset.css);
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: UniSans;
+    src: url("../fonts/Uni Sans Heavy.otf");
+}
+
+body {
+    font-family: UniSans;
+}
+
+/* Все блоки по высоте экрана */
+.logo-block {
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+/* Все картинки полностью помещаются в блок */
+img {
+    max-height: 100%;
+}
+
+.btn-scroll {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.btn-scroll::before {
+    font-size: 80px !important;
+}
+
+/* Отцентровка первой картинки, высота такая чтобы хедером не закрывалась */
+.img-block {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    height: 80%;
+}
+
+/* Относительное позиционирование чтобы абсолютно спозиционированная картинка внутри знала своего родителя */
+.container {
+    position: relative;
+    height: 100%;
+}
+
+.text {
+    padding: 120px 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.side-img-left {
+    position: absolute;
+    float: left;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.side-text-right {
+    position: relative;
+    padding: 120px 20px;
+    margin-left: 50%;
+    float: left;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.side-img-right {
+    position: relative;
+    margin-left: 50%;
+    float: left;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.side-text-left {
+    position: absolute;
+    padding: 120px 20px;
+    float: left;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.white {
+    background: white;
+}
+
+.black {
+    background: black;
+}
+
+.text-title {
+    font-weight: 100;
+    font-size: 73px;
+    line-height: 1.1;
+    text-align: center;
+}
+
+.description {
+    font-size: 31px;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.side-bar {
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+
+.side-text-bar {
+    display: inline-block;
+    position: relative;
+    padding: 120px 20px;
+    float: left;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.progress-bar {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+}
+
+.score {
+    font-size: 50px;
+    text-align: center;
+}
+
+.reg-description {
+    margin-bottom: 100px;
+}
+
+.btn-register {
+    border: 2px solid white;
+    background-color: black;
+    border-radius: 3px;
+    padding: 25px 100px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.btn-register:hover {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+}
+
+.btn-center {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    width: 600px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    white-space: nowrap;
+}
+
+.title {
+    text-align: center;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 30px;
+    color: black;
+    font-size: 60px;
+}
+
+.message {
+    display: block !important;
+    text-align: center;
+    color: white;
+}
+
+.v-ring {
+    display: block !important;
+    margin: auto;
+}
