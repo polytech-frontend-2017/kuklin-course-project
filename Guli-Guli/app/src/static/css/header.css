@@ -1,0 +1,86 @@
+header {
+    width: 90%;
+    text-align: justify;
+    height: 5em;
+    padding: 1em 5%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    z-index: 999;
+}
+
+header::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+header > div,
+header > div::before,
+header .nav,
+header > div .logo {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+}
+
+header > div {
+    height: 100%;
+}
+
+header > div::before {
+    content: '';
+    height: 100%;
+}
+
+header > div .logo {
+    font-size: 3em;
+    font-style: italic;
+}
+
+header .nav a {
+    padding: 0 0.6em;
+    white-space: nowrap;
+}
+
+header .nav a:last-child {
+    padding-right: 0;
+}
+
+@media screen and (max-width: 720px) {
+
+    header {
+        height: auto;
+    }
+
+    header > div,
+    header > div .logo,
+    header .nav {
+        height: auto;
+        width: auto;
+        display: block;
+        text-align: center;
+    }
+
+}
+
+.header-main {
+    margin: 0px auto;
+    z-index: 0;
+}
+
+header .nav {
+    height: 100%;
+}
+
+.header-link {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 45px !important;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.header-link:hover, .link-active {
+    background-color: white;
+    color: black;
+}

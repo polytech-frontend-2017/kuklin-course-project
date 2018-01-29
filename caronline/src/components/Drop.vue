@@ -1,5 +1,6 @@
 <template>
-    <dropzone id="drop" url="https://httpbin.org/post" v-on:vdropzone-success="showSuccess">
+    <dropzone id="drop" url="http://localhost:8081/image/recognize" v-on:vdropzone-success="showSuccess"
+              v-on:vdropzone-error="showError">
         <input type="hidden" name="token" value="xxx">
     </dropzone>
 </template>
@@ -13,9 +14,14 @@
             Dropzone,
         },
         methods: {
-            'showSuccess': function (file) {
-                console.log('A file was successfully uploaded')
-            }
+            'showSuccess': function (file, response) {
+                let win = window.open(response, '_blank');
+                win.focus();
+            },
+            'showError': function (file, message, xhr) {
+                console.log('Something went wrong during file handling')
+                console.log(message)
+            },
         }
     }
 
